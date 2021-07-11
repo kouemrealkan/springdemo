@@ -18,4 +18,10 @@ public class AdminServiceImpl implements AdminService{
     public List<Admin> findAll() {
         return adminRepository.findAll();
     }
+
+    @Override
+    public void save(Admin theAdmin) {
+        adminRepository.save(theAdmin);
+    }
+
 }
